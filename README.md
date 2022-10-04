@@ -21,10 +21,11 @@ Make sure your browser is up-to-date with the latest version available.
 ## Install ViolentMonkey
 
 Stores for:
-	* [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/)
-	* [Mozilla Firefox Android](https://addons.mozilla.org/en-US/android/addon/violentmonkey/)
-	* [Google Chrome](https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag)
-	* [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/violentmonkey/eeagobfjdenkkddmbclomhiblgggliao) 
+
+* [Mozilla Firefox](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/)
+* [Mozilla Firefox Android](https://addons.mozilla.org/en-US/android/addon/violentmonkey/)
+* [Google Chrome](https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag)
+* [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/violentmonkey/eeagobfjdenkkddmbclomhiblgggliao) 
 
 Note for Safari users: The following sections do not apply. Install [Userscripts](https://itunes.apple.com/us/app/userscripts/id1463298887) instead and follow their documentation on how to install a script.
 
@@ -50,11 +51,12 @@ See the Options section for more on what configuration options are provided.
 
 ## Try it
 
-Go to indeed.com and search for any of the companies listed in the script and see the magic happen right before your very eyes.
+Go to indeed.com and search for any of the companies listed
+in the script and see the magic happen right before your very eyes.
 
 # Options
 
-These are configured as variables inside the script
+These options are provided as variables at the top script
 
 * `baddies`: The names of offensive companies (no, I'll wait). Write them as they appear in the results page.
 * `hide`: Remove violators from view instead of flagging them. (`true`=hide, `false`=flag)
