@@ -44,13 +44,21 @@ Paste the contents to the empty text-box.
 
 Click "Save & Close" on the top right.
 
+## Configure script
+
+See the Options section for more on what configuration options are provided.
+
+## Try it
+
+Go to indeed.com and search for any of the companies listed in the script and see the magic happen right before your very eyes.
+
 # Options
 
 These are configured as variables inside the script
 
-`baddies`: The names of offensive companies (no, I'll wait). Write them as they appear in the results page.
-`hide`: Remove violators from view instead of flagging them. (`true`=hide, `false`=flag)
-`bigFlag`: Pick either subtle flagging or very obvious. (`true`=obvious, `false`=subtle)
+* `baddies`: The names of offensive companies (no, I'll wait). Write them as they appear in the results page.
+* `hide`: Remove violators from view instead of flagging them. (`true`=hide, `false`=flag)
+* `bigFlag`: Pick either subtle flagging or very obvious. (`true`=obvious, `false`=subtle)
 
 # Working Status
 
