@@ -19,76 +19,76 @@ const bigFlag = true;
 const baddies = new Set(["Client Server", "Oho Group", "Noir Consulting"]);
 
 /// What color to flag the baddies
-const baddieColor = "#ff0000"
+const baddieColor = "#ff0000";
 
 //////////////////////////////////////////////////////////////////////////////////////////
 //////  ADVANCED BADDIE DETECTION ALGORITHM AHEAD                                   //////
 //////////////////////////////////////////////////////////////////////////////////////////
 
-const css = 'li td.resultContent > div.companyInfo > span.companyName'
+const css = 'li td.resultContent > div.companyInfo > span.companyName';
 
 function xpathAll(xpath, root)
 {
-  if (root === undefined)
+    if (root === undefined)
     {
-      root = document;
+        root = document;
     }
 
-  let xpathResult = document.evaluate(xpath, root);
+    let xpathResult = document.evaluate(xpath, root);
 
-  let a = [];
+    let a = [];
 
-  while ( (e = xpathResult.iterateNext()) !== null )
-  {
-    a.push(e);
-  }
-  return a;
+    while ( (e = xpathResult.iterateNext()) !== null )
+    {
+        a.push(e);
+    }
+    return a;
 }
 
 function main()
 {
-  let action;
-  if (hide)
-  {
-    action = (e) => {
-      while (e.tagName !== "LI")
-        {
-          e = e.parentNode;
+    let action;
+    if (hide)
+    {
+        action = (e) => {
+            while (e.tagName !== "LI")
+            {
+                e = e.parentNode;
+            }
+            e.hidden = true;
         }
-      e.hidden = true;
     }
-  }
-  else // flag instead of hiding
-  {
-    if (!bigFlag)
+    else // flag instead of hiding
     {
-      action = (e) => { e.style.background = baddieColor; };
-    }
-    else // it's the big one
-    {
-      action = (e) => {
-        // traverse up the DOM until the "ideal element" (the one that looks
-        // best when turned red) is found div.job_seen_beacon is the ideal
-        // element but stop at li in case it is not found (sail-safe)
-        while (!e.classList.contains("job_seen_beacon") && e.tagName !== "LI")
+        if (!bigFlag)
         {
-          e = e.parentNode;
+            action = (e) => { e.style.background = baddieColor; };
         }
-        e.style.background = baddieColor;
-      }
+        else // it's the big one
+        {
+            action = (e) => {
+                // traverse up the DOM until the "ideal element" (the one that looks
+                // best when turned red) is found div.job_seen_beacon is the ideal
+                // element but stop at li in case it is not found (sail-safe)
+                while (!e.classList.contains("job_seen_beacon") && e.tagName !== "LI")
+                {
+                    e = e.parentNode;
+                }
+                e.style.background = baddieColor;
+            }
+        }
     }
-  }
 
-  const pred = (e) => {
-    const potentialBaddieName = e.innerText.trim();
-    if (baddies.has(potentialBaddieName))
-    {
-      action(e);
+    const pred = (e) => {
+        const potentialBaddieName = e.innerText.trim();
+        if (baddies.has(potentialBaddieName))
+        {
+            action(e);
+        }
+        console.log(e.innerText);
     }
-    console.log(e.innerText);
-  }
 
-  Array.from(document.querySelectorAll(css)).filter(pred).forEach(action);
+    Array.from(document.querySelectorAll(css)).filter(pred).forEach(action);
 }
 
 console.log("!!==!!")
