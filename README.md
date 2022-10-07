@@ -35,8 +35,9 @@ Do you hate seeing the giant popups by Google?
 
 Are you a frequent user of the private/incognito mode?
 
-Make sure you install these two scripts and you will never\*
-have them borther you again. SATISFACTION GUARANTEED
+Make sure you install these two scripts and they will never\* borther you again!
+
+SATISFACTION GUARANTEED!
 
 \* or until next Tuesday when they change their layout again
 
@@ -64,7 +65,7 @@ Stores for:
 * [Google Chrome](https://chrome.google.com/webstore/detail/violentmonkey/jinjaccalgkegednnccohejagnlnfdag)
 * [Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/violentmonkey/eeagobfjdenkkddmbclomhiblgggliao) 
 
-Note for Safari users: The following sections do not apply. Install [Userscripts](https://itunes.apple.com/us/app/userscripts/id1463298887) instead and follow their documentation on how to install a script.
+Note for Safari users: The following sections do not apply. Install [Userscripts on Itunes](https://itunes.apple.com/us/app/userscripts/id1463298887) instead and follow their documentation on how to install a script.
 
 ## Create a new script
 
