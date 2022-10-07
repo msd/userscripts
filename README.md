@@ -29,7 +29,7 @@ These options are provided as variables at the top script
 Go to indeed.com and search for any of the companies listed
 in the script and see the magic happen right before your very eyes.
 
-# Reject Google and Youtube Cookies
+# Reject [Google](https://raw.githubusercontent.com/msd/userscripts/main/google-cookies.js) and [Youtube](https://raw.githubusercontent.com/msd/userscripts/main/youtube-cookies.js) Cookies
 
 Do you hate seeing the giant popups by Google?
 
