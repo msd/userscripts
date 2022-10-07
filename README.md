@@ -10,7 +10,7 @@ positions instead of fixing your leaky faucet you told them 2 months ago?
 
 Boy, do we have the product for you!
 
-Try RecruiterBooter-2000 today!
+Try RecruiterBooter-2000 today! It won't convince your landlond but it might save you valuable time on your search for a living wage.
 
 ## Working Status
 
