@@ -1,4 +1,4 @@
-# Recruiter Booter for indeed.com
+# [Recruiter Booter](https://github.com/msd/recruiter-booter/raw/main/recruiter-booter.js) for indeed.com
 
 Have you been burned multiple times by a specific company?
 
@@ -11,6 +11,43 @@ positions instead of fixing your leaky faucet you told them 2 months ago?
 Boy, do we have the product for you!
 
 Try RecruiterBooter-2000 today!
+
+## Working Status
+
+This script has been tested and found working as of 2022-10-04.
+
+## Configure script
+
+These options are provided as variables at the top script
+
+* `baddies`: The names of offensive companies (no, I'll wait). Write them as they appear in the results page.
+* `hide`: Remove violators from view instead of flagging them. (`true`=hide, `false`=flag)
+* `bigFlag`: Pick either subtle flagging or very obvious. (`true`=obvious, `false`=subtle)
+
+## Try it
+
+Go to indeed.com and search for any of the companies listed
+in the script and see the magic happen right before your very eyes.
+
+# Reject Google and Youtube Cookies
+
+Do you hate seeing the giant popups by Google?
+
+Are you a frequent user of the private/incognito mode?
+
+Make sure you install these two scripts and you will never\*
+have them borther you again. SATISFACTION GUARANTEED
+
+\* or until next Tuesday when they change their layout again
+
+## Working Status
+
+This script has been tested and found working as of 2022-10-07.
+
+## Try it
+
+Open a new private/incognito browser window and go to either [youtube.com](https://youtube.com)
+or [google.com](https://google.com).
 
 # Installing
 
@@ -39,31 +76,12 @@ Delete all the lines in order to be left with an empty text-box.
 
 ## Copy script
 
-Open the [script file](https://github.com/msd/recruiter-booter/raw/main/recruiter-booter.js) and copy the entire contents.
+Open the script file and copy the entire contents.
 
 Paste the contents to the empty text-box.
 
 Click "Save & Close" on the top right.
 
-## Configure script
-
-See the Options section for more on what configuration options are provided.
-
-## Try it
-
-Go to indeed.com and search for any of the companies listed
-in the script and see the magic happen right before your very eyes.
-
-# Options
-
-These options are provided as variables at the top script
-
-* `baddies`: The names of offensive companies (no, I'll wait). Write them as they appear in the results page.
-* `hide`: Remove violators from view instead of flagging them. (`true`=hide, `false`=flag)
-* `bigFlag`: Pick either subtle flagging or very obvious. (`true`=obvious, `false`=subtle)
-
-# Working Status
-
-This has been tested and found working as of 2022-10-04.
+# Broken?
 
 If you followed the above instructions and it still does not work please open an issue ticket.
