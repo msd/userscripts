@@ -13,6 +13,12 @@
 
 All notable changes to this project will be documented here
 
+## Unreleased
+
+### Fixed
+
+- xpathArray major logic bug, only every other result is returned
+
 ## [1.1] 02-12-2022
 
 ### Added 
@@ -43,7 +49,6 @@ function xpathArray(xpath, root)
     while ((e = result.iterateNext()) !== null)
     {
         a.push(e);
-        e = result.iterateNext();
     }
     return a;
 }
