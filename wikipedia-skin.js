@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        Use Old Wikipedia Layout / Skin / Theme (Vector)
+// @name        [wikipedia.org] Use Old Wikipedia Layout / Skin / Theme (Vector)
 // @namespace   com.github.msd
 // @match       https://*.wikipedia.org/wiki/*
 // @exclude     https://*.wikipedia.org/wiki/File:*
